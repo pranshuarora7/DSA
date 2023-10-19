@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "string": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "C_Cpp.default.enableConfigurationSquiggles": false
+}
