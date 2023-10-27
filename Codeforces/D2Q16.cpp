@@ -18,14 +18,14 @@ int main()
 
     sort(puzzleSizes.begin(), puzzleSizes.end());
 
-    int minDifference = puzzleSizes[n - 1] - puzzleSizes[0];
+    int minimumDifference = puzzleSizes[n - 1] - puzzleSizes[0];
 
     for (int i = n; i < m; i++)
     {
-        minDifference = min(minDifference, puzzleSizes[i] - puzzleSizes[i - n + 1]);
+        minimumDifference = min(minimumDifference, puzzleSizes[i] - puzzleSizes[i - n + 1]);
     }
 
-    cout << minDifference << endl;
+    cout << minimumDifference << endl;
 
     return 0;
 }
