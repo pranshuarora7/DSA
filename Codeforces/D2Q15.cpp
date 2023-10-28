@@ -1,32 +1,30 @@
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
     int n;
+
     cin >> n;
 
-    int totalX = 0, totalY = 0, totalZ = 0;
+    int a, b, c;
 
-    for (int i = 0; i < n; i++)
+    int x = 0, y = 0, z = 0;
+
+    int i;
+
+    for (i = 0; i < n; i++)
     {
-        int x, y, z;
-        cin >> x >> y >> z;
+        cin >> a >> b >> c;
 
-        totalX += x;
-        totalY += y;
-        totalZ += z;
+        x = x + a;
+        y = y + b;
+        z = z + c;
     }
 
-    if (totalX == 0 && totalY == 0 && totalZ == 0)
-    {
+    if (x == 0 && y == 0 && z == 0)
         cout << "YES" << endl;
-    }
     else
-    {
         cout << "NO" << endl;
-    }
 
     return 0;
 }
